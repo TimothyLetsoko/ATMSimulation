@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Controllers.Login">
+    <Label alignment="CENTER" prefHeight="75.0" prefWidth="606.0" style="-fx-background-color: grey;" text="Bank 101">
+        <font>
+            <Font name="System Bold" size="30.0"/>
+        </font>
+    </Label>
+    <Label alignment="CENTER" layoutY="98.0" prefHeight="30.0" prefWidth="606.0" text="Enter Card Number">
+        <font>
+            <Font size="20.0"/>
+        </font>
+    </Label>
+    <Label alignment="CENTER" layoutY="211.0" prefHeight="30.0" prefWidth="606.0" text="Enter PIN">
+        <font>
+            <Font size="20.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="tfCardNumber" alignment="CENTER" focusTraversable="false" layoutX="187.0" layoutY="141.0"
+               prefHeight="58.0" prefWidth="231.0" promptText="---- ----">
+        <font>
+            <Font size="30.0"/>
+        </font>
+    </TextField>
+    <PasswordField fx:id="pfPIN" alignment="CENTER" focusTraversable="false" layoutX="187.0" layoutY="241.0"
+                   prefHeight="66.0" prefWidth="231.0" promptText="-----">
+        <font>
+            <Font size="30.0"/>
+        </font>
+    </PasswordField>
+    <Button layoutX="187.0" layoutY="331.0" mnemonicParsing="false" onAction="#signIn" prefHeight="38.0"
+            prefWidth="104.0" text="OK">
+        <font>
+            <Font size="20.0"/>
+        </font>
+    </Button>
+    <Button layoutX="314.0" layoutY="331.0" mnemonicParsing="false" onAction="#clearFields"
+            prefHeight="38.0" prefWidth="104.0" text="CLEAR">
+        <font>
+            <Font size="20.0"/>
+        </font>
+    </Button>
+    <Label fx:id="lblErrorMsg" layoutX="14.0" layoutY="75.0" textFill="#f70707"/>
+</AnchorPane>

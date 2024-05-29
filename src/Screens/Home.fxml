@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="317.0" prefWidth="606.0" style="-fx-background-color: silver;"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Controllers.Home">
+    <Label alignment="CENTER" prefHeight="75.0" prefWidth="606.0" style="-fx-background-color: grey;" text="Bank 101">
+        <font>
+            <Font name="System Bold" size="30.0"/>
+        </font>
+    </Label>
+    <Button focusTraversable="false" layoutX="17.0" layoutY="168.0" mnemonicParsing="false" onAction="#withdraw"
+            prefHeight="75.0" prefWidth="283.0" text="Withdraw Cash">
+        <font>
+            <Font name="System Bold" size="12.0"/>
+        </font>
+    </Button>
+    <Button focusTraversable="false" layoutX="306.0" layoutY="168.0" mnemonicParsing="false" onAction="#deposit"
+            prefHeight="75.0" prefWidth="283.0" text="Deposit Cash">
+        <font>
+            <Font name="System Bold" size="12.0"/>
+        </font>
+    </Button>
+    <Button focusTraversable="false" layoutX="17.0" layoutY="256.0" mnemonicParsing="false" onAction="#showBalance"
+            prefHeight="75.0" prefWidth="283.0" text="Show Balance">
+        <font>
+            <Font name="System Bold" size="12.0"/>
+        </font>
+    </Button>
+    <Button focusTraversable="false" layoutX="306.0" layoutY="256.0" mnemonicParsing="false" onAction="#printStatement"
+            prefHeight="75.0" prefWidth="283.0" text="Print Statement">
+        <font>
+            <Font name="System Bold" size="12.0"/>
+        </font>
+    </Button>
+    <Button alignment="TOP_CENTER" focusTraversable="false" layoutX="306.0" layoutY="364.0" mnemonicParsing="false"
+            onAction="#options" prefHeight="36.0" prefWidth="283.0" text="Options"/>
+    <Button alignment="TOP_CENTER" cancelButton="true" focusTraversable="false" layoutX="17.0" layoutY="364.0"
+            mnemonicParsing="false" onAction="#exit" prefHeight="36.0" prefWidth="283.0" text="EXIT" textFill="#f40606">
+        <font>
+            <Font name="System Bold" size="12.0"/>
+        </font>
+    </Button>
+    <Label fx:id="lblDate" alignment="CENTER" layoutX="514.0" layoutY="75.0" prefHeight="18.0" prefWidth="71.0"
+           style="-fx-background-color: white;" text="08/08/2022"/>
+    <Label layoutX="17.0" layoutY="93.0" text="Choose an option below">
+        <font>
+            <Font name="System Bold" size="25.0"/>
+        </font>
+    </Label>
+</AnchorPane>
