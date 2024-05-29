@@ -37,6 +37,8 @@ public class Withdraw implements Initializable {
         stage.setScene(scene);
         stage.setTitle("Welcome");
         stage.show();
+
+        //Added a comment
     }
 
     @FXML
